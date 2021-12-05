@@ -1,0 +1,468 @@
+,Unnamed: 0,Unnamed: 0.1,Unnamed: 0.1.1,age,gender,raceethnicity,month,city,state,cause,armed,county_bucket,nat_bucket,age-decade,age-group,lawenforcementagency,lawenforcementagency_fixed,raceethnicityW
+0,0,0,0,16,Male,Black,February,Millbrook,AL,Gunshot,No,3.0,3.0,age 10-20,Teenager,Police Department,Police Department,Non White
+1,1,1,1,16,Male,White,February,Essex,MD,Gunshot,Firearm,1.0,2.0,age 10-20,Teenager,Police Department,Police Department,White
+2,2,2,2,16,Male,Black,March,Jacksonville,FL,Gunshot,Firearm,1.0,1.0,age 10-20,Teenager,Sheriff's Office,Sheriff's Office,Non White
+3,3,3,3,17,Male,White,May,Grand Junction,CO,Gunshot,Firearm,1.0,1.0,age 10-20,Teenager,Police Department,Police Department,White
+4,4,4,4,17,Male,White,March,Roxand Township,MI,Gunshot,Non-lethal firearm,5.0,4.0,age 10-20,Teenager,Sheriff's Office,Sheriff's Office,White
+5,5,5,5,17,Male,White,February,Bay City,MI,Gunshot,Knife,1.0,1.0,age 10-20,Teenager,Police Department,Police Department,White
+6,6,6,6,17,Female,Hispanic/Latino,January,Denver,CO,Gunshot,Firearm,3.0,3.0,age 10-20,Teenager,Police Department,Police Department,Non White
+7,7,7,7,17,Male,Black,April,Zion,IL,Gunshot,Firearm,1.0,3.0,age 10-20,Teenager,Police Department,Police Department,Non White
+8,8,8,8,17,Female,White,January,Longview,TX,Gunshot,Firearm,1.0,1.0,age 10-20,Teenager,Police Department,Police Department,White
+9,9,9,9,18,Male,White,May,St Petersburg,FL,Gunshot,Firearm,3.0,3.0,age 10-20,Teenager,Police Department,Police Department,White
+10,10,10,10,18,Male,Black,March,Cleveland,OH,Gunshot,Firearm,1.0,1.0,age 10-20,Teenager,Police Department,Police Department,Non White
+11,11,11,11,18,Male,White,May,Wake Forest,NC,Gunshot,No,2.0,4.0,age 10-20,Teenager,Police Department,Police Department,White
+12,12,12,12,18,Male,Black,April,Chicago,IL,Gunshot,No,2.0,2.0,age 10-20,Teenager,Police Department,Police Department,Non White
+13,13,13,13,18,Male,White,January,Guthrie,OK,Gunshot,Non-lethal firearm,2.0,2.0,age 10-20,Teenager,State Police,State Police,White
+14,14,14,14,18,Male,White,May,Trenton,MI,Gunshot,No,5.0,4.0,age 10-20,Teenager,Police Department,Police Department,White
+15,15,15,15,18,Male,Hispanic/Latino,January,Key Largo,FL,Unknown,Knife,3.0,3.0,age 10-20,Teenager,Sheriff's Office,Sheriff's Office,Non White
+16,16,16,16,18,Male,Black,April,Portsmouth,VA,Gunshot,No,1.0,1.0,age 10-20,Teenager,Police Department,Police Department,Non White
+17,17,17,17,19,Male,Unknown,May,Cottonwood,AZ,Gunshot,No,1.0,2.0,age 10-20,Teenager,Sheriff's Office,Sheriff's Office,Non White
+18,18,18,18,19,Male,Hispanic/Latino,April,Long Beach,CA,Gunshot,No,1.0,1.0,age 10-20,Teenager,Police Department,Police Department,Non White
+19,19,19,19,19,Male,Black,January,St Louis,MO,Gunshot,Firearm,1.0,1.0,age 10-20,Teenager,Police Department,Police Department,Non White
+20,20,20,20,19,Male,White,January,Kaumakani,HI,Struck by vehicle,Knife,5.0,4.0,age 10-20,Teenager,Police Department,Police Department,White
+21,21,21,21,19,Male,Black,March,Madison,WI,Gunshot,Firearm,2.0,3.0,age 10-20,Teenager,Police Department,Police Department,Non White
+22,22,22,22,20,Male,White,March,Onalaska,TX,Gunshot,No,3.0,2.0,age 20-30,Young,Police Department,Police Department,White
+23,23,23,23,20,Male,Unknown,May,Long Beach,CA,Gunshot,Firearm,4.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+24,24,24,24,20,Male,White,March,Sumas,WA,Gunshot,Firearm,3.0,3.0,age 20-30,Young,US Border Patrol,US Border Patrol,White
+25,25,25,25,20,Female,Black,February,Charlotte,NC,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+26,26,26,26,20,Male,Black,March,Joliet,IL,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+27,27,27,27,20,Male,Black,April,Detroit,MI,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Immigration and Customs Enforcement,Immigration and Customs Enforcement,Non White
+28,28,28,28,20,Male,Black,April,Trinidad,CO,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+29,29,29,29,21,Male,Hispanic/Latino,February,San Francisco,CA,Gunshot,Vehicle,2.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+30,30,30,30,21,Male,Hispanic/Latino,February,Kansas City,KS,Gunshot,Other,2.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+31,31,31,31,21,Male,Hispanic/Latino,April,Corning,CA,Gunshot,Knife,4.0,3.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+32,32,32,32,21,Male,Hispanic/Latino,March,Baytown,TX,Gunshot,Other,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+33,33,33,33,21,Male,Black,March,Bay Shore,NY,Gunshot,Firearm,1.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+34,34,34,34,21,Male,White,March,Cottonwood,AZ,Gunshot,Firearm,1.0,2.0,age 20-30,Young,Police Department,Police Department,White
+35,35,35,35,21,Male,Black,May,Cerritos,CA,Gunshot,Firearm,5.0,5.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+36,36,36,36,21,Male,Black,January,Muskogee,OK,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+37,37,37,37,22,Male,Hispanic/Latino,March,Bakersfield,CA,Gunshot,Firearm,4.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+38,38,38,38,22,Male,Hispanic/Latino,May,El Paso,TX,Gunshot,Firearm,3.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+39,39,39,39,22,Male,Hispanic/Latino,April,El Paso,TX,Gunshot,Knife,5.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+40,40,40,40,22,Male,White,January,Chatham,MA,Struck by vehicle,Unknown,4.0,4.0,age 20-30,Young,Police Department,Police Department,White
+41,41,41,41,22,Male,White,April,Navarre,FL,Gunshot,Firearm,3.0,4.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+42,42,42,42,22,Male,Black,April,New Orleans,LA,Gunshot,Other,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+43,43,43,43,22,Male,Hispanic/Latino,January,Chandler,AZ,Gunshot,No,3.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+44,44,44,44,22,Male,Black,January,Savannah,GA,Death in custody,Other,2.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+45,45,45,45,22,Male,Hispanic/Latino,March,Rio Linda,CA,Gunshot,Knife,3.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+46,46,46,46,22,Male,Black,April,Miami,FL,Gunshot,Knife,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+47,47,47,47,23,Male,White,April,Indianapolis,IN,Gunshot,Non-lethal firearm,3.0,2.0,age 20-30,Young,Police Department,Police Department,White
+48,48,48,48,23,Male,Unknown,January,South Gate,CA,Gunshot,Firearm,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+49,49,49,49,23,Male,White,March,Port Wentworth,GA,Gunshot,Firearm,5.0,4.0,age 20-30,Young,Police Department,Police Department,White
+50,50,50,50,23,Male,Hispanic/Latino,January,Wichita,KS,Gunshot,Knife,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+51,51,51,51,23,Male,White,February,San Bernadino,CA,Gunshot,Firearm,3.0,3.0,age 20-30,Young,Police Department,Police Department,White
+52,52,52,52,23,Male,Black,February,St Louis,MO,Gunshot,No,3.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+53,53,53,53,23,Male,Black,March,Atlanta,GA,Gunshot,Knife,2.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+54,54,54,54,23,Male,Black,February,San Jose,CA,Gunshot,Firearm,1.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+55,55,55,55,23,Male,Black,January,Tulsa,OK,Gunshot,Firearm,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+56,56,56,56,23,Male,Hispanic/Latino,March,Pomona,CA,Gunshot,Knife,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+57,57,57,57,23,Male,Black,April,Jennings,MO,Gunshot,Knife,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+58,58,58,58,24,Female,White,March,San Francisco,CA,Gunshot,Firearm,2.0,4.0,age 20-30,Young,Police Department,Police Department,White
+59,59,59,59,24,Male,Hispanic/Latino,April,Houston,TX,Gunshot,No,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+60,60,60,60,24,Male,White,February,Peltzer,SC,Gunshot,Firearm,3.0,2.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+61,61,61,61,24,Male,White,February,Provo,UT,Gunshot,Knife,1.0,2.0,age 20-30,Young,Police Department,Police Department,White
+62,62,62,62,24,Male,White,March,Dublin,NC,Gunshot,Knife,1.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+63,63,63,63,24,Male,Black,March,Santa Clara,CA,Gunshot,Other,1.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+64,64,64,64,24,Male,Hispanic/Latino,May,Hackensack,NJ,Gunshot,Knife,1.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+65,65,65,65,24,Male,Black,April,New York,NY,Gunshot,Knife,4.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+66,66,66,66,24,Male,White,May,Edmond,OK,Gunshot,Knife,5.0,5.0,age 20-30,Young,Police Department,Police Department,White
+67,67,67,67,24,Male,White,May,Bossier City,LA,Gunshot,Firearm,,1.0,age 20-30,Young,FBI,FBI,White
+68,68,68,68,24,Male,Hispanic/Latino,January,Tahoka,TX,Gunshot,Knife,,2.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+69,69,69,69,24,Male,Native American,March,Lukachukai,AZ,Gunshot,Firearm,2.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+70,70,70,70,24,Male,Black,January,St Paul,MN,Gunshot,Vehicle,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+71,71,71,71,24,Male,Hispanic/Latino,January,Los Angeles,CA,Gunshot,No,4.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+72,72,72,72,24,Male,White,January,Bloomington,MN,Gunshot,Knife,4.0,5.0,age 20-30,Young,Police Department,Police Department,White
+73,73,73,73,24,Male,Hispanic/Latino,April,Mission,TX,Gunshot,Firearm,3.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+74,74,74,74,25,Male,Hispanic/Latino,March,South Gate,CA,Gunshot,Firearm,3.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+75,75,75,75,25,Female,Black,April,Atlanta,GA,Gunshot,Vehicle,3.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+76,76,76,76,25,Male,White,April,Victoria,TX,Gunshot,Firearm,5.0,4.0,age 20-30,Young,Police Department,Police Department,White
+77,77,77,77,25,Male,Black,May,Detroit,MI,Gunshot,No,2.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+78,78,78,78,25,Male,Hispanic/Latino,January,Fort Worth,TX,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+79,79,79,79,25,Male,Black,April,Harvey,LA,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+80,80,80,80,25,Male,Black,March,Salisbury,MD,Gunshot,Firearm,1.0,1.0,age 20-30,Young,State Police,State Police,Non White
+81,81,81,81,25,Male,Black,April,Baltimore,MD,Death in custody,Firearm,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+82,82,82,82,25,Male,Black,February,Miami Gardens,FL,Gunshot,Firearm,4.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+83,83,83,83,25,Male,White,March,Tempe,AZ,Gunshot,Firearm,2.0,2.0,age 20-30,Young,Police Department,Police Department,White
+84,84,84,84,25,Male,White,January,Stockton,CA,Gunshot,Other,2.0,2.0,age 20-30,Young,Police Department,Police Department,White
+85,85,85,85,25,Male,Black,January,Sierra Blanca,TX,Gunshot,Other,,1.0,age 20-30,Young,US Border Patrol,US Border Patrol,Non White
+86,86,86,86,26,Male,White,March,Kenosha,WI,Gunshot,No,2.0,3.0,age 20-30,Young,Police Department,Police Department,White
+87,87,87,87,26,Male,White,April,Chickasha,OK,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+88,88,88,88,26,Male,White,April,Sylmar,CA,Gunshot,Firearm,3.0,3.0,age 20-30,Young,Police Department,Police Department,White
+89,89,89,89,26,Male,Black,January,Los Angeles,CA,Taser,Firearm,2.0,2.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+90,90,90,90,26,Male,White,January,Rosenberg,TX,Gunshot,Firearm,2.0,3.0,age 20-30,Young,Police Department,Police Department,White
+91,91,91,91,26,Male,Black,January,Baltimore,MD,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+92,92,92,92,26,Male,White,March,Deltona,FL,Gunshot,Unknown,3.0,2.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+93,93,93,93,26,Male,Black,February,Oklahoma City,OK,Gunshot,Knife,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+94,94,94,94,26,Male,Black,May,Omaha,NE,Gunshot,No,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+95,95,95,95,26,Male,Black,May,Fort Lauderdale,FL,Unknown,Firearm,1.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+96,96,96,96,26,Female,Black,March,Oxnard,CA,Gunshot,No,2.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+97,97,97,97,26,Male,White,February,Boise,ID,Gunshot,Knife,1.0,1.0,age 20-30,Young,Police Department,Police Department,White
+98,98,98,98,26,Male,Native American,January,Phoenix,AZ,Gunshot,No,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+99,99,99,99,26,Male,Hispanic/Latino,January,Pueblo,CO,Gunshot,Firearm,3.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+100,100,100,100,26,Male,Hispanic/Latino,January,Houston,TX,Gunshot,Firearm,3.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+101,101,101,101,26,Male,White,March,Peebles,OH,Gunshot,Vehicle,5.0,3.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+102,102,102,102,27,Male,White,April,Pineville,LA,Gunshot,No,2.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+103,103,103,103,27,Male,Black,March,Chamblee,GA,Gunshot,No,4.0,4.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+104,104,104,104,27,Male,Black,January,Indianapolis,IN,Gunshot,Other,3.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+105,105,105,105,27,Male,Hispanic/Latino,February,Santa Ana,CA,Gunshot,No,1.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+106,106,106,106,27,Male,Hispanic/Latino,April,Alton,IL,Gunshot,No,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+107,107,107,107,27,Male,Black,March,Johnsonville,SC,Gunshot,Firearm,2.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+108,108,108,108,27,Male,Hispanic/Latino,April,Delano,CA,Gunshot,Firearm,3.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+109,109,109,109,27,Male,White,April,Marion,IL,Gunshot,Firearm,1.0,1.0,age 20-30,Young,State Police,State Police,White
+110,110,110,110,27,Male,Hispanic/Latino,April,Elk Grove,CA,Gunshot,Knife,3.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+111,111,111,111,27,Male,White,February,Huntingdon,TN,Gunshot,Other,2.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+112,112,112,112,27,Male,Black,March,Fort Meade,MD,Gunshot,Firearm,2.0,5.0,age 20-30,Young,Police Department,Police Department,Non White
+113,113,113,113,27,Male,White,February,Austin,TX,Gunshot,No,5.0,5.0,age 20-30,Young,Police Department,Police Department,White
+114,114,114,114,27,Male,White,May,Ruidoso,NM,Gunshot,Firearm,5.0,3.0,age 20-30,Young,Police Department,Police Department,White
+115,115,115,115,28,Male,Asian/Pacific Islander,March,Stockton,CA,Gunshot,Knife,1.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+116,116,116,116,28,Male,Black,February,Columbia,MO,Gunshot,Firearm,2.0,2.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+117,117,117,117,28,Male,Black,May,Jacksonville,FL,Gunshot,Firearm,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+118,118,118,118,28,Male,Black,February,Tallahassee,FL,Gunshot,Vehicle,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+119,119,119,119,28,Female,Unknown,February,Tuscon,AZ,Gunshot,Firearm,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+120,120,120,120,28,Male,Hispanic/Latino,February,Phoenix,AZ,Gunshot,Other,2.0,2.0,age 20-30,Young,US Marshals Service,US Marshals Service,Non White
+121,121,121,121,28,Male,White,April,Highland,CA,Death in custody,Knife,3.0,3.0,age 20-30,Young,Police Department,Police Department,White
+122,122,122,122,28,Male,White,April,Sunnyvale,CA,Gunshot,Firearm,2.0,5.0,age 20-30,Young,Police Department,Police Department,White
+123,123,123,123,28,Male,White,March,St Paul,MN,Gunshot,Firearm,2.0,3.0,age 20-30,Young,Police Department,Police Department,White
+124,124,124,124,28,Male,White,May,St Augustine,FL,Gunshot,Firearm,4.0,5.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+125,125,125,125,28,Male,White,January,Huntley,MT,Gunshot,Firearm,5.0,4.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+126,126,126,126,28,Male,White,April,Boiling Springs,SC,Gunshot,Other,5.0,3.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+127,127,127,127,28,Male,Hispanic/Latino,February,Phoenix,AZ,Gunshot,Firearm,2.0,2.0,age 20-30,Young,US Marshals Service,US Marshals Service,Non White
+128,128,128,128,28,Male,Hispanic/Latino,March,Los Angeles,CA,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+129,129,129,129,28,Male,Native American,April,Tonasket,WA,Taser,Firearm,1.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+130,130,130,130,29,Male,White,March,Munroe Falls,OH,Gunshot,No,5.0,4.0,age 20-30,Young,Police Department,Police Department,White
+131,131,131,131,29,Male,White,March,Phoenix,AZ,Gunshot,No,1.0,1.0,age 20-30,Young,Police Department,Police Department,White
+132,132,132,132,29,Male,Black,May,Lancaster,PA,Gunshot,Knife,1.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+133,133,133,133,29,Male,White,April,Bunch,OK,Gunshot,Firearm,4.0,2.0,age 20-30,Young,Police Department,Police Department,White
+134,134,134,134,29,Male,Black,May,Los Angeles,CA,Gunshot,Firearm,3.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+135,135,135,135,29,Male,Black,March,Elizabethtown,KY,Gunshot,Knife,4.0,4.0,age 20-30,Young,Police Department,Police Department,Non White
+136,136,136,136,29,Male,White,January,Morenci,AZ,Gunshot,Firearm,,4.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,White
+137,137,137,137,29,Male,Black,January,Lauderhill,FL,Gunshot,No,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+138,138,138,138,29,Male,Black,February,Antioch,CA,Gunshot,Firearm,1.0,3.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+139,139,139,139,29,Male,Black,April,Monon,IN,Gunshot,Firearm,1.0,2.0,age 20-30,Young,State Police,State Police,Non White
+140,140,140,140,29,Male,Hispanic/Latino,April,Hemet,CA,Gunshot,Firearm,1.0,1.0,age 20-30,Young,Sheriff's Office,Sheriff's Office,Non White
+141,141,141,141,29,Male,Black,March,Modesto,CA,Gunshot,Knife,4.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+142,142,142,142,29,Male,Black,May,Fort Lauderdale,FL,Gunshot,Unknown,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+143,143,143,143,29,Male,White,January,Robertsville,MO,Gunshot,No,5.0,3.0,age 20-30,Young,Police Department,Police Department,White
+144,144,144,144,29,Male,Hispanic/Latino,March,San Antonio,TX,Gunshot,Firearm,3.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+145,145,145,145,29,Male,Hispanic/Latino,January,Las Vegas,NV,Gunshot,No,2.0,2.0,age 20-30,Young,Police Department,Police Department,Non White
+146,146,146,146,29,Male,Black,March,Mansfield,OH,Taser,Firearm,1.0,1.0,age 20-30,Young,Police Department,Police Department,Non White
+147,147,147,147,29,Male,Black,March,Portsmouth,VA,Gunshot,Other,3.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+148,148,148,148,30,Male,Black,March,Cocoa,FL,Gunshot,Knife,1.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+149,149,149,149,30,Male,Black,March,Culpeper,VA,Taser,Firearm,1.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+150,150,150,150,30,Male,White,February,Tewksbury,MA,Gunshot,No,4.0,5.0,age 30-40,Young,Police Department,Police Department,White
+151,151,151,151,30,Male,Black,May,Garland,TX,Gunshot,No,3.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+152,152,152,152,30,Male,White,April,New York,NY,Gunshot,No,1.0,1.0,age 30-40,Young,Police Department,Police Department,White
+153,153,153,153,30,Male,White,February,Green Bay,WI,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,White
+154,154,154,154,30,Male,Black,May,Fort Worth,TX,Gunshot,No,4.0,4.0,age 30-40,Young,Police Department,Police Department,Non White
+155,155,155,155,30,Male,White,January,Des Moines,IA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,White
+156,156,156,156,31,Male,White,February,Wyoming,MI,Gunshot,Other,3.0,2.0,age 30-40,Young,Police Department,Police Department,White
+157,157,157,157,31,Male,White,February,Terre Haute,IN,Gunshot,Firearm,4.0,2.0,age 30-40,Young,Police Department,Police Department,White
+158,158,158,158,31,Male,White,March,Middleton,ID,Gunshot,Knife,5.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+159,159,159,159,31,Male,White,April,Jonesboro,AR,Gunshot,No,3.0,2.0,age 30-40,Young,Police Department,Police Department,White
+160,160,160,160,31,Male,Black,April,Hagerstown,MD,Taser,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+161,161,161,161,31,Male,White,March,Memphis,TN,Gunshot,Other,3.0,2.0,age 30-40,Young,Police Department,Police Department,White
+162,162,162,162,31,Male,Black,March,Baton Rouge,LA,Gunshot,Vehicle,1.0,1.0,age 30-40,Young,US Marshals Service,US Marshals Service,Non White
+163,163,163,163,31,Male,White,April,Gettysburg,PA,Gunshot,Firearm,3.0,4.0,age 30-40,Young,State Police,State Police,White
+164,164,164,164,31,Male,White,January,Rosemont,IL,Gunshot,Firearm,3.0,3.0,age 30-40,Young,Police Department,Police Department,White
+165,165,165,165,31,Male,White,February,Springfield,MO,Gunshot,No,1.0,1.0,age 30-40,Young,Police Department,Police Department,White
+166,166,166,166,31,Male,Black,April,Anaheim,CA,Gunshot,Knife,1.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+167,167,167,167,31,Male,Black,April,Fort Worth,TX,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+168,168,168,168,31,Male,Hispanic/Latino,February,Euless,TX,Gunshot,Vehicle,5.0,5.0,age 30-40,Young,Police Department,Police Department,Non White
+169,169,169,169,31,Male,White,March,Kingman,AZ,Gunshot,Firearm,4.0,2.0,age 30-40,Young,Police Department,Police Department,White
+170,170,170,170,31,Male,Black,May,Fridley,MN,Gunshot,No,1.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+171,171,171,171,31,Male,White,April,Rigby,ID,Gunshot,No,,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+172,172,172,172,31,Male,Hispanic/Latino,January,Houston,TX,Gunshot,No,2.0,2.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+173,173,173,173,32,Male,Hispanic/Latino,March,Los Angeles,CA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+174,174,174,174,32,Male,Black,April,Rock Island,IL,Gunshot,No,2.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+175,175,175,175,32,Male,White,April,Shawnee,OK,Gunshot,Knife,5.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+176,176,176,176,32,Male,Black,May,Northglenn,CO,Gunshot,Firearm,,3.0,age 30-40,Young,Police Department,Police Department,Non White
+177,177,177,177,32,Male,White,April,Salemburg,NC,Gunshot,Knife,2.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+178,178,178,178,32,Male,Black,May,Charleston,SC,Gunshot,No,4.0,4.0,age 30-40,Young,State Police,State Police,Non White
+179,179,179,179,32,Male,White,January,Maricopa,AZ,Gunshot,Firearm,5.0,5.0,age 30-40,Young,Police Department,Police Department,White
+180,180,180,180,32,Male,White,January,San Francisco,CA,Gunshot,Other,5.0,5.0,age 30-40,Young,Police Department,Police Department,White
+181,181,181,181,32,Male,White,February,Eaton Rapids Township,MI,Gunshot,Other,5.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+182,182,182,182,32,Male,White,March,Vancouver,WA,Death in custody,Knife,1.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+183,183,183,183,32,Male,Black,March,Vineland,NJ,Death in custody,Firearm,2.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+184,184,184,184,32,Male,Black,January,Freeport,TX,Gunshot,Knife,2.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+185,185,185,185,32,Male,Asian/Pacific Islander,May,South El Monte,CA,Gunshot,Knife,3.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+186,186,186,186,33,Male,Hispanic/Latino,January,El Paso,TX,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+187,187,187,187,33,Male,Hispanic/Latino,January,Wasco,CA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+188,188,188,188,33,Male,White,April,Muskogee County,OK,Taser,Firearm,2.0,1.0,age 30-40,Young,Police Department,Police Department,White
+189,189,189,189,33,Male,White,April,Ocala,FL,Gunshot,No,4.0,3.0,age 30-40,Young,Police Department,Police Department,White
+190,190,190,190,33,Male,Black,January,Columbus,OH,Gunshot,No,2.0,1.0,age 30-40,Young,State Police,State Police,Non White
+191,191,191,191,33,Male,White,May,Sarasota,FL,Unknown,Other,3.0,3.0,age 30-40,Young,Police Department,Police Department,White
+192,192,192,192,33,Male,Hispanic/Latino,February,Anchorage,AK,Gunshot,Knife,1.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+193,193,193,193,33,Male,Hispanic/Latino,April,Mesa,AZ,Gunshot,Knife,3.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+194,194,194,194,33,Male,Native American,January,Anchorage,AK,Death in custody,Knife,1.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+195,195,195,195,33,Male,White,January,Ville Platte,LA,Gunshot,Knife,4.0,2.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+196,196,196,196,33,Male,Black,April,San Antonio,TX,Taser,Vehicle,4.0,4.0,age 30-40,Young,Police Department,Police Department,Non White
+197,197,197,197,33,Male,White,May,Alpine,CA,Gunshot,Firearm,4.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+198,198,198,198,34,Female,White,January,Burlington,IA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,White
+199,199,199,199,34,Male,White,February,Colton,OR,Gunshot,Non-lethal firearm,2.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+200,200,200,200,34,Female,White,February,Moultrie,GA,Gunshot,Knife,5.0,3.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+201,201,201,201,34,Male,White,May,San Diego,CA,Gunshot,Vehicle,3.0,4.0,age 30-40,Young,Police Department,Police Department,White
+202,202,202,202,34,Male,White,April,Edgewood,NM,Gunshot,Vehicle,2.0,3.0,age 30-40,Young,State Police,State Police,White
+203,203,203,203,34,Male,White,February,Iuka,MS,Gunshot,No,,1.0,age 30-40,Young,Police Department,Police Department,White
+204,204,204,204,34,Male,White,January,Draper,UT,Gunshot,No,4.0,4.0,age 30-40,Young,Police Department,Police Department,White
+205,205,205,205,34,Male,White,January,Albuquerque,NM,Gunshot,Firearm,4.0,3.0,age 30-40,Young,Police Department,Police Department,White
+206,206,206,206,34,Male,Black,May,Landover,MD,Gunshot,Firearm,4.0,5.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+207,207,207,207,34,Male,Black,January,Chesapeake,VA,Gunshot,Firearm,2.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+208,208,208,208,34,Male,Asian/Pacific Islander,May,Garland,TX,Gunshot,Vehicle,3.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+209,209,209,209,34,Female,Black,May,Ridgefield Park,NJ,Struck by vehicle,Firearm,3.0,5.0,age 30-40,Young,State Police,State Police,Non White
+210,210,210,210,34,Male,White,May,Kansas City,KS,Taser,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,White
+211,211,211,211,34,Male,Hispanic/Latino,March,Burbank,CA,Gunshot,Firearm,5.0,5.0,age 30-40,Young,Police Department,Police Department,Non White
+212,212,212,212,34,Male,Black,March,St Louis,MO,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+213,213,213,213,34,Male,White,March,Sulphur Springs,TX,Taser,Knife,2.0,2.0,age 30-40,Young,Police Department,Police Department,White
+214,214,214,214,34,Male,White,March,Wapanucka,OK,Gunshot,Firearm,,2.0,age 30-40,Young,Police Department,Police Department,White
+215,215,215,215,34,Male,White,March,Lincoln,NE,Gunshot,Unknown,2.0,2.0,age 30-40,Young,US Marshals Service,US Marshals Service,White
+216,216,216,216,35,Male,Hispanic/Latino,March,Wilmington,CA,Gunshot,Non-lethal firearm,4.0,4.0,age 30-40,Young,Police Department,Police Department,Non White
+217,217,217,217,35,Male,Hispanic/Latino,February,Pasco,WA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+218,218,218,218,35,Male,Black,March,Rome,GA,Taser,Knife,3.0,2.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+219,219,219,219,35,Male,Black,March,Washington,DC,Gunshot,Firearm,5.0,5.0,age 30-40,Young,Police Department,Police Department,Non White
+220,220,220,220,35,Male,White,January,Assaria,KS,Gunshot,Knife,4.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+221,221,221,221,35,Male,White,February,Marysville,CA,Taser,Firearm,1.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+222,222,222,222,35,Male,Black,April,Union,NJ,Gunshot,Knife,3.0,4.0,age 30-40,Young,State Police,State Police,Non White
+223,223,223,223,35,Male,Asian/Pacific Islander,February,Houston,TX,Gunshot,No,2.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+224,224,224,224,35,Male,White,February,Calimesa,CA,Gunshot,Firearm,2.0,2.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+225,225,225,225,35,Male,White,May,Cabot,AR,Gunshot,Knife,2.0,3.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+226,226,226,226,35,Male,Hispanic/Latino,April,Los Angeles,CA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+227,227,227,227,35,Male,Asian/Pacific Islander,January,Stockton,CA,Gunshot,Firearm,2.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+228,228,228,228,35,Male,White,March,Claymount,DE,Gunshot,Firearm,1.0,2.0,age 30-40,Young,State Police,State Police,White
+229,229,229,229,35,Male,White,May,Beacon,NY,Gunshot,Firearm,1.0,3.0,age 30-40,Young,Police Department,Police Department,White
+230,230,230,230,35,Male,White,May,Mounds,OK,Gunshot,No,,2.0,age 30-40,Young,Police Department,Police Department,White
+231,231,231,231,35,Male,White,February,Reading,PA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,State Police,State Police,White
+232,232,232,232,35,Male,White,May,Kearny,AZ,Gunshot,No,3.0,3.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+233,233,233,233,35,Male,Hispanic/Latino,February,Electra,TX,Taser,Unknown,5.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+234,234,234,234,36,Male,White,March,Fontana,CA,Gunshot,Firearm,2.0,2.0,age 30-40,Young,Police Department,Police Department,White
+235,235,235,235,36,Male,Black,May,Huntsville,AL,Gunshot,Knife,3.0,4.0,age 30-40,Young,Police Department,Police Department,Non White
+236,236,236,236,36,Male,Black,January,Strong,AR,Gunshot,Firearm,2.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+237,237,237,237,36,Male,White,March,Portland,OR,Gunshot,Other,1.0,2.0,age 30-40,Young,Police Department,Police Department,White
+238,238,238,238,36,Male,White,May,Conyers,GA,Gunshot,Firearm,,3.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+239,239,239,239,36,Male,White,March,Tampa Bay,FL,Gunshot,No,5.0,5.0,age 30-40,Young,US Marshals Service,US Marshals Service,White
+240,240,240,240,36,Male,Hispanic/Latino,January,Fairfield,CA,Gunshot,Disputed,1.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+241,241,241,241,36,Male,Black,May,Lyndhurst,NJ,Gunshot,Firearm,2.0,4.0,age 30-40,Young,Police Department,Police Department,Non White
+242,242,242,242,36,Male,White,May,Roosevelt,UT,Gunshot,No,,4.0,age 30-40,Young,Police Department,Police Department,White
+243,243,243,243,36,Male,Black,April,Indianapolis,IN,Gunshot,Vehicle,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+244,244,244,244,36,Male,Black,February,Memphis,TN,Gunshot,Firearm,3.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+245,245,245,245,36,Male,Hispanic/Latino,January,Roma,TX,Gunshot,Firearm,3.0,1.0,age 30-40,Young,US Border Patrol,US Border Patrol,Non White
+246,246,246,246,36,Male,White,May,Kennewick,WA,Gunshot,Firearm,1.0,2.0,age 30-40,Young,Police Department,Police Department,White
+247,247,247,247,36,Male,White,March,Bakersfield,CA,Gunshot,Firearm,4.0,3.0,age 30-40,Young,Police Department,Police Department,White
+248,248,248,248,36,Male,White,April,Hamilton Township,NJ,Gunshot,Firearm,2.0,3.0,age 30-40,Young,Police Department,Police Department,White
+249,249,249,249,36,Male,White,January,Hemet,CA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+250,250,250,250,36,Male,White,March,Ruth,MS,Gunshot,Firearm,5.0,3.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+251,251,251,251,37,Male,Hispanic/Latino,April,Lakewood,WA,Gunshot,Firearm,1.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+252,252,252,252,37,Male,Hispanic/Latino,February,San Manuel,AZ,Gunshot,No,2.0,2.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+253,253,253,253,37,Male,Hispanic/Latino,March,Ontario,CA,Gunshot,Firearm,4.0,4.0,age 30-40,Young,Police Department,Police Department,Non White
+254,254,254,254,37,Male,Black,February,Oklahoma City,OK,Gunshot,No,2.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+255,255,255,255,37,Male,Hispanic/Latino,February,Orlando,FL,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+256,256,256,256,37,Male,White,February,Port St Joe,FL,Gunshot,No,,2.0,age 30-40,Young,Police Department,Police Department,White
+257,257,257,257,37,Male,Black,May,Spokane,WA,Death in custody,No,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+258,258,258,258,37,Male,White,February,Powder Springs,GA,Gunshot,No,4.0,5.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+259,259,259,259,37,Male,Black,March,Aurora,CO,Gunshot,No,1.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+260,260,260,260,37,Female,Black,February,Fairfax,VA,Taser,No,4.0,5.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+261,261,261,261,37,Male,Black,January,New Orleans,LA,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+262,262,262,262,37,Male,White,March,Vallejo,CA,Gunshot,Firearm,5.0,5.0,age 30-40,Young,Police Department,Police Department,White
+263,263,263,263,37,Male,Black,April,Hawthorne,CA,Gunshot,No,5.0,5.0,age 30-40,Young,Police Department,Police Department,Non White
+264,264,264,264,37,Female,White,February,La Paz County,AZ,Gunshot,No,1.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+265,265,265,265,37,Male,White,March,Fond du Lac,WI,Gunshot,Firearm,1.0,1.0,age 30-40,Young,State Police,State Police,White
+266,266,266,266,37,Male,Black,March,Elkton,MD,Gunshot,Knife,1.0,3.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+267,267,267,267,38,Male,Black,May,Owensboro,KY,Gunshot,Firearm,5.0,4.0,age 30-40,Young,State Police,State Police,Non White
+268,268,268,268,38,Male,White,April,Winchester,VA,Gunshot,Firearm,1.0,3.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+269,269,269,269,38,Male,White,April,Topeka,KS,Gunshot,Firearm,3.0,2.0,age 30-40,Young,Police Department,Police Department,White
+270,270,270,270,38,Male,White,May,Portage,MI,Gunshot,Firearm,5.0,4.0,age 30-40,Young,State Police,State Police,White
+271,271,271,271,38,Male,Asian/Pacific Islander,March,Honolulu,HI,Taser,No,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+272,272,272,272,38,Male,Black,February,Birmingham,AL,Gunshot,Firearm,2.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+273,273,273,273,38,Female,Black,February,Oakland,CA,Gunshot,Firearm,2.0,4.0,age 30-40,Young,Police Department,Police Department,Non White
+274,274,274,274,39,Male,Hispanic/Latino,May,Nashville,TN,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+275,275,275,275,39,Male,Hispanic/Latino,March,Santa Ana,CA,Gunshot,Knife,1.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+276,276,276,276,39,Male,Black,February,Coconut Creek,FL,Taser,Firearm,2.0,2.0,age 30-40,Young,Police Department,Police Department,Non White
+277,277,277,277,39,Male,White,February,Omaha,NE,Gunshot,Firearm,2.0,1.0,age 30-40,Young,Police Department,Police Department,White
+278,278,278,278,39,Male,White,April,Rockwood,MI,Taser,Firearm,5.0,4.0,age 30-40,Young,Police Department,Police Department,White
+279,279,279,279,39,Male,Black,April,Albany,NY,Taser,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+280,280,280,280,39,Male,White,March,Crown Point,IN,Taser,Firearm,5.0,4.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+281,281,281,281,39,Male,Black,March,Fort Pierce,FL,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+282,282,282,282,39,Male,Black,January,Aurora,CO,Gunshot,Vehicle,2.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+283,283,283,283,39,Male,Asian/Pacific Islander,April,Boulder,CO,Gunshot,Firearm,5.0,5.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,Non White
+284,284,284,284,39,Male,Hispanic/Latino,January,Evans,CO,Gunshot,Firearm,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+285,285,285,285,39,Female,White,May,Gillette,WY,Gunshot,Firearm,3.0,5.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+286,286,286,286,39,Male,Hispanic/Latino,April,Los Angeles,CA,Gunshot,No,1.0,1.0,age 30-40,Young,Police Department,Police Department,Non White
+287,287,287,287,39,Male,Unknown,May,Middletown,NJ,Gunshot,Non-lethal firearm,,5.0,age 30-40,Young,Police Department,Police Department,Non White
+288,288,288,288,39,Male,White,March,Moulton,AL,Gunshot,Other,3.0,2.0,age 30-40,Young,Sheriff's Office,Sheriff's Office,White
+289,289,289,289,39,Female,White,January,Omaha,NE,Gunshot,Firearm,4.0,4.0,age 30-40,Young,Police Department,Police Department,White
+290,290,290,290,39,Male,White,January,Arcola,IL,Gunshot,Firearm,2.0,3.0,age 30-40,Young,Police Department,Police Department,White
+291,291,291,291,40,Male,White,May,Rancho Santa Margarita,CA,Gunshot,No,5.0,5.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+292,292,292,292,40,Male,Hispanic/Latino,March,Oklahoma City,OK,Gunshot,Vehicle,2.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+293,293,293,293,40,Male,Black,May,Silver Spring,MD,Taser,Firearm,1.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+294,294,294,294,40,Male,Hispanic/Latino,May,New York,NY,Death in custody,Firearm,2.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+295,295,295,295,40,Male,White,May,Eagar,AZ,Gunshot,Firearm,5.0,3.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+296,296,296,296,40,Male,Black,February,Tarboro,NC,Gunshot,No,1.0,1.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+297,297,297,297,40,Male,Unknown,May,Medford,OR,Gunshot,Non-lethal firearm,2.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+298,298,298,298,40,Male,Black,May,Carrollton,GA,Gunshot,Firearm,,2.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+299,299,299,299,40,Male,White,April,Wilmore,KY,Gunshot,Non-lethal firearm,4.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+300,300,300,300,40,Male,White,May,Somerset,PA,Gunshot,Knife,2.0,2.0,age 40-50,Middle-Aged,State Police,State Police,White
+301,301,301,301,40,Male,White,March,Webster,MA,Gunshot,No,1.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+302,302,302,302,40,Male,White,January,Forth Worth,TX,Gunshot,Unknown,5.0,5.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+303,303,303,303,41,Male,Black,March,Roxbury,MA,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+304,304,304,304,41,Male,Hispanic/Latino,February,Clarkesville,GA,Gunshot,Firearm,5.0,3.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+305,305,305,305,41,Male,White,March,Branford,CT,Taser,Other,3.0,4.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+306,306,306,306,41,Male,Black,April,Spartanburg,SC,Gunshot,Firearm,2.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+307,307,307,307,41,Male,Black,April,Houston,TX,Gunshot,No,5.0,5.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+308,308,308,308,41,Male,Black,January,Columbus,OH,Gunshot,Firearm,,,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+309,309,309,309,41,Male,Hispanic/Latino,March,Napa,CA,Gunshot,Firearm,4.0,5.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+310,310,310,310,41,Male,White,February,Rudioso,NM,Gunshot,No,2.0,2.0,age 40-50,Middle-Aged,State Police,State Police,White
+311,311,311,311,41,Male,Black,May,Ridgefield Park,NJ,Struck by vehicle,No,3.0,5.0,age 40-50,Middle-Aged,State Police,State Police,Non White
+312,312,312,312,41,Male,White,February,Nocona,TX,Gunshot,Other,2.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+313,313,313,313,41,Male,White,May,Rockford,IL,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+314,314,314,314,41,Male,Black,February,Tulsa,OK,Taser,Firearm,4.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+315,315,315,315,42,Male,Black,January,Norfolk,NE,Death in custody,No,4.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+316,316,316,316,42,Male,Hispanic/Latino,February,Lakeland,FL,Gunshot,Firearm,2.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+317,317,317,317,42,Male,Black,January,Scottsdale,AZ,Gunshot,Knife,3.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+318,318,318,318,42,Male,Black,April,Valdosta,GA,Gunshot,Knife,3.0,1.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+319,319,319,319,42,Male,White,February,Apple Valley,CA,Gunshot,Firearm,3.0,3.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+320,320,320,320,42,Male,White,April,San Diego,CA,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+321,321,321,321,42,Male,White,March,Fort Ashby,WV,Gunshot,Firearm,5.0,2.0,age 40-50,Middle-Aged,State Police,State Police,White
+322,322,322,322,42,Male,White,January,Salt Lake City,UT,Gunshot,Firearm,2.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+323,323,323,323,42,Male,White,March,Columbus,OH,Gunshot,Unknown,3.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+324,324,324,324,42,Male,White,February,Allentown,PA,Gunshot,Knife,2.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+325,325,325,325,42,Male,Black,March,Arlington,TX,Death in custody,No,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+326,326,326,326,42,Male,White,May,Sacramento,CA,Gunshot,Firearm,2.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+327,327,327,327,42,Male,White,January,Stillwater,OK,Gunshot,Firearm,3.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+328,328,328,328,43,Female,White,February,Gastonia,NC,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+329,329,329,329,43,Male,Black,March,Los Angeles,CA,Gunshot,Vehicle,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+330,330,330,330,43,Male,White,April,Phoenix,AZ,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+331,331,331,331,43,Male,White,February,Las Vegas,NV,Gunshot,Firearm,1.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+332,332,332,332,43,Male,White,May,Charleston,SC,Gunshot,Knife,5.0,5.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+333,333,333,333,43,Male,White,March,Tulsa,OK,Struck by vehicle,Vehicle,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+334,334,334,334,43,Female,Black,March,Anaheim,CA,Gunshot,Firearm,1.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+335,335,335,335,43,Male,White,January,Jourdanton,TX,Gunshot,Firearm,4.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+336,336,336,336,43,Male,White,April,Meridian,MS,Taser,No,4.0,2.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+337,337,337,337,44,Male,White,January,Sunset,TX,Gunshot,Firearm,2.0,1.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+338,338,338,338,44,Male,White,May,Albuquerque,NM,Gunshot,Firearm,2.0,2.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+339,339,339,339,44,Male,White,April,Sidney,NE,Gunshot,Firearm,,3.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+340,340,340,340,44,Male,Black,April,Tulsa,OK,Gunshot,Firearm,2.0,2.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+341,341,341,341,44,Male,White,March,Clarendon,NY,Gunshot,Firearm,5.0,4.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+342,342,342,342,45,Male,White,February,Douglas,GA,Gunshot,Firearm,4.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+343,343,343,343,45,Male,White,February,Glenwood Springs,CO,Gunshot,Knife,3.0,4.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+344,344,344,344,45,Male,White,January,Rexburg,ID,Gunshot,Non-lethal firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+345,345,345,345,45,Male,White,April,Garden Grove,CA,Gunshot,Firearm,2.0,4.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+346,346,346,346,45,Male,Black,February,Dallas,TX,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+347,347,347,347,45,Male,White,April,Panama City,FL,Gunshot,Knife,1.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+348,348,348,348,45,Male,White,January,Robinsonville,MS,Gunshot,Firearm,,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+349,349,349,349,45,Male,Black,May,Harvey,IL,Gunshot,No,2.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+350,350,350,350,45,Male,Black,March,Milwaukee,WI,Gunshot,Non-lethal firearm,5.0,4.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+351,351,351,351,46,Male,Asian/Pacific Islander,May,Honolulu,HI,Gunshot,No,2.0,4.0,age 40-50,Middle-Aged,US Marshals Service,US Marshals Service,Non White
+352,352,352,352,46,Male,White,February,Dadeville,AL,Gunshot,Firearm,3.0,2.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+353,353,353,353,46,Male,White,March,Craig,CO,Gunshot,No,,4.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+354,354,354,354,46,Male,White,February,Orlando,FL,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+355,355,355,355,46,Female,White,April,Sebastopol,CA,Gunshot,Vehicle,4.0,4.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+356,356,356,356,46,Male,White,May,Pulaski,VA,Gunshot,No,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+357,357,357,357,47,Male,Black,March,Oklahoma City,OK,Taser,Firearm,2.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+358,358,358,358,47,Male,White,March,Tallulah,LA,Struck by vehicle,Firearm,2.0,1.0,age 40-50,Middle-Aged,State Police,State Police,White
+359,359,359,359,47,Male,White,June,Palestine,TX,Gunshot,No,,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+360,360,360,360,47,Male,White,May,Green Ridge,MO,Gunshot,Firearm,4.0,3.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+361,361,361,361,47,Male,White,March,Bakersfield,CA,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+362,362,362,362,47,Male,White,March,Williamsburg,KY,Death in custody,Firearm,3.0,1.0,age 40-50,Middle-Aged,State Police,State Police,White
+363,363,363,363,47,Male,Black,January,Pittsburgh,PA,Gunshot,Firearm,2.0,1.0,age 40-50,Middle-Aged,State Police,State Police,Non White
+364,364,364,364,47,Male,White,January,Aloha,OR,Gunshot,No,2.0,3.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+365,365,365,365,47,Male,White,February,Denham Springs,LA,Gunshot,Firearm,5.0,4.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+366,366,366,366,47,Male,Hispanic/Latino,April,Shafter,CA,Gunshot,Firearm,3.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+367,367,367,367,47,Male,White,May,Tacoma,WA,Gunshot,Knife,1.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+368,368,368,368,48,Male,Black,March,Putnam Hall,FL,Gunshot,Firearm,4.0,2.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+369,369,369,369,48,Male,Black,February,Memphis,TN,Gunshot,Vehicle,3.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+370,370,370,370,48,Male,Black,May,Harvey,LA,Gunshot,Firearm,3.0,2.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+371,371,371,371,48,Male,White,January,Billings,MT,Gunshot,Firearm,1.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+372,372,372,372,48,Male,Unknown,January,Fremont,CA,Gunshot,Firearm,4.0,5.0,age 40-50,Middle-Aged,Police Department,Police Department,Non White
+373,373,373,373,49,Male,White,March,Medford,OR,Gunshot,Firearm,3.0,2.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+374,374,374,374,49,Male,White,March,Eugene,OR,Gunshot,Firearm,3.0,3.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+375,375,375,375,49,Male,White,March,Lucedale,MS,Gunshot,Firearm,1.0,2.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+376,376,376,376,49,Female,White,March,Peoria,AZ,Gunshot,Non-lethal firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+377,377,377,377,49,Male,White,April,Salemburg,OR,Gunshot,Firearm,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+378,378,378,378,49,Male,White,January,Weymouth,MA,Gunshot,Firearm,2.0,4.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+379,379,379,379,49,Male,White,February,Gulfport,MS,Gunshot,Other,1.0,1.0,age 40-50,Middle-Aged,Police Department,Police Department,White
+380,380,380,380,49,Male,White,January,Syracuse,UT,Gunshot,Firearm,4.0,5.0,age 40-50,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+381,381,381,381,50,Male,White,February,Palm Bay,FL,Gunshot,Knife,2.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+382,382,382,382,50,Male,Hispanic/Latino,February,Del Rio,TX,Gunshot,No,4.0,2.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+383,383,383,383,50,Male,Black,May,Rochester,NY,Taser,Firearm,,1.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+384,384,384,384,50,Male,Black,April,North Charleston,SC,Gunshot,Knife,1.0,1.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+385,385,385,385,51,Male,Hispanic/Latino,April,Bisbee,AZ,Gunshot,Knife,2.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+386,386,386,386,51,Male,Black,May,New York,NY,Gunshot,No,2.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+387,387,387,387,51,Male,Black,February,Waco,TX,Gunshot,No,2.0,1.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+388,388,388,388,51,Male,White,April,Rufe,OK,Gunshot,Firearm,4.0,1.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+389,389,389,389,51,Male,White,April,Phoenix,AZ,Gunshot,No,3.0,3.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+390,390,390,390,51,Male,White,February,Indianapolis,IN,Gunshot,Firearm,4.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+391,391,391,391,51,Male,White,April,Columbia,MO,Gunshot,Other,1.0,1.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+392,392,392,392,51,Male,White,February,Laredo,TX,Gunshot,Knife,4.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+393,393,393,393,52,Male,Hispanic/Latino,April,Pomona,CA,Gunshot,Knife,3.0,3.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+394,394,394,394,52,Male,White,May,Green,OH,Gunshot,Firearm,4.0,4.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+395,395,395,395,52,Male,Black,April,Fallsburg,NY,Death in custody,Firearm,5.0,4.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+396,396,396,396,52,Male,White,May,Smyrna,DE,Gunshot,Firearm,5.0,4.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+397,397,397,397,52,Male,White,March,Gaston,NC,Gunshot,Firearm,2.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+398,398,398,398,53,Male,White,May,St Augustine,FL,Gunshot,Firearm,3.0,4.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+399,399,399,399,53,Male,White,March,Follansbee,WV,Gunshot,No,1.0,2.0,age 50-60,Middle-Aged,State Police,State Police,White
+400,400,400,400,53,Female,White,March,Gardner,KS,Gunshot,Firearm,3.0,4.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+401,401,401,401,53,Male,Black,April,Emporia,VA,Gunshot,Other,,2.0,age 50-60,Middle-Aged,State Police,State Police,Non White
+402,402,402,402,53,Male,White,April,Nashville,TN,Gunshot,Firearm,5.0,5.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+403,403,403,403,53,Male,White,May,Chavies,KY,Gunshot,No,4.0,2.0,age 50-60,Middle-Aged,State Police,State Police,White
+404,404,404,404,53,Male,Unknown,January,Shelton,WA,Gunshot,Non-lethal firearm,1.0,2.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+405,405,405,405,53,Male,White,March,Hoover,AL,Gunshot,No,5.0,5.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+406,406,406,406,54,Male,Hispanic/Latino,May,Arlington,VA,Gunshot,Firearm,1.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+407,407,407,407,54,Male,White,January,Derry,NH,Gunshot,Firearm,1.0,4.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+408,408,408,408,54,Male,Black,January,Randallstown,MD,Gunshot,Firearm,2.0,3.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+409,409,409,409,54,Male,White,March,Bay Minette,AL,Gunshot,Firearm,3.0,3.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+410,410,410,410,54,Male,White,March,Boulder City,NV,Gunshot,No,2.0,3.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+411,411,411,411,54,Male,White,April,Kellyville,OK,Gunshot,No,3.0,3.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+412,412,412,412,54,Male,White,February,Pasco,WA,Death in custody,Firearm,1.0,1.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+413,413,413,413,55,Male,White,May,Enfield,NC,Taser,Firearm,2.0,1.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+414,414,414,414,55,Male,White,May,Grants Pass,OR,Gunshot,Knife,,3.0,age 50-60,Middle-Aged,State Police,State Police,White
+415,415,415,415,56,Male,White,February,Marana,AZ,Gunshot,Knife,4.0,4.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+416,416,416,416,56,Male,White,March,Encinitas,CA,Gunshot,No,5.0,5.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+417,417,417,417,56,Male,Hispanic/Latino,January,Levelland,TX,Gunshot,No,1.0,1.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+418,418,418,418,56,Male,Unknown,April,Tehachapi,CA,Gunshot,Firearm,4.0,4.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+419,419,419,419,57,Male,Black,January,San Francisco,CA,Death in custody,No,4.0,5.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+420,420,420,420,57,Male,White,May,Eatonton,GA,Gunshot,No,,3.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+421,421,421,421,57,Male,Unknown,April,Lake Isabella,CA,Taser,Firearm,1.0,1.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,Non White
+422,422,422,422,57,Male,White,March,San Jose,CA,Gunshot,Firearm,1.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+423,423,423,423,57,Male,Asian/Pacific Islander,January,Minneapolis,MN,Taser,Firearm,1.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+424,424,424,424,57,Male,White,February,New City,NY,Gunshot,Firearm,5.0,5.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+425,425,425,425,58,Male,White,April,Clermont,FL,Gunshot,Firearm,4.0,3.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+426,426,426,426,58,Male,White,April,Mansfield,OH,Gunshot,Firearm,2.0,2.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+427,427,427,427,58,Male,White,May,Constantania,NY,Gunshot,No,3.0,3.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+428,428,428,428,58,Male,White,March,Penrose,NC,Gunshot,Firearm,2.0,2.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+429,429,429,429,59,Male,White,February,Hanover,PA,Gunshot,Firearm,4.0,4.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+430,430,430,430,59,Male,White,March,Kansas City,MO,Gunshot,No,3.0,3.0,age 50-60,Middle-Aged,US Marshals Service,US Marshals Service,White
+431,431,431,431,59,Male,White,April,Columbia,SC,Gunshot,No,5.0,5.0,age 50-60,Middle-Aged,Sheriff's Office,Sheriff's Office,White
+432,432,432,432,59,Male,White,February,Chino,CA,Gunshot,No,5.0,5.0,age 50-60,Middle-Aged,Police Department,Police Department,White
+433,433,433,433,59,Male,Unknown,January,Berlin,NJ,Gunshot,Non-lethal firearm,3.0,4.0,age 50-60,Middle-Aged,Police Department,Police Department,Non White
+434,434,434,434,60,Male,White,May,Lancaster,SC,Gunshot,No,,2.0,age 60-70,Adult,Sheriff's Office,Sheriff's Office,White
+435,435,435,435,60,Male,White,April,San Antonio,TX,Gunshot,Knife,2.0,2.0,age 60-70,Adult,Police Department,Police Department,White
+436,436,436,436,60,Male,White,March,Harmony,IN,Gunshot,No,1.0,2.0,age 60-70,Adult,Sheriff's Office,Sheriff's Office,White
+437,437,437,437,61,Male,White,February,Smyrna,ME,Gunshot,Knife,4.0,2.0,age 60-70,Adult,State Police,State Police,White
+438,438,438,438,61,Male,White,January,Austin,TX,Gunshot,No,3.0,4.0,age 60-70,Adult,Police Department,Police Department,White
+439,439,439,439,62,Male,Black,March,Atlanta,GA,Struck by vehicle,No,1.0,1.0,age 60-70,Adult,Police Department,Police Department,Non White
+440,440,440,440,62,Male,White,May,Snohomish,WA,Gunshot,Knife,1.0,2.0,age 60-70,Adult,Sheriff's Office,Sheriff's Office,White
+441,441,441,441,63,Male,White,April,Metropolis,IL,Gunshot,Non-lethal firearm,,3.0,age 60-70,Adult,Police Department,Police Department,White
+442,442,442,442,63,Male,White,April,Miami,OK,Gunshot,No,2.0,1.0,age 60-70,Adult,Police Department,Police Department,White
+443,443,443,443,63,Male,White,March,Waikoloa Village,HI,Struck by vehicle,Firearm,5.0,4.0,age 60-70,Adult,Police Department,Police Department,White
+444,444,444,444,63,Male,White,March,Glendale,AZ,Gunshot,Firearm,3.0,3.0,age 60-70,Adult,Police Department,Police Department,White
+445,445,445,445,63,Male,Black,March,Kenner,LA,Gunshot,Disputed,,,age 60-70,Adult,Sheriff's Office,Sheriff's Office,Non White
+446,446,446,446,64,Male,White,February,Los Angeles,CA,Struck by vehicle,Firearm,3.0,3.0,age 60-70,Adult,Police Department,Police Department,White
+447,447,447,447,64,Male,White,March,Tallahassee,FL,Gunshot,Firearm,2.0,1.0,age 60-70,Adult,Police Department,Police Department,White
+448,448,448,448,64,Female,Asian/Pacific Islander,March,Hackensack,NJ,Struck by vehicle,No,1.0,3.0,age 60-70,Adult,Police Department,Police Department,Non White
+449,449,449,449,64,Male,Black,March,Cleveland,OH,Gunshot,No,1.0,1.0,age 60-70,Adult,Police Department,Police Department,Non White
+450,450,450,450,67,Male,White,January,Gunlock,KY,Gunshot,Firearm,,1.0,age 60-70,Adult,State Police,State Police,White
+451,451,451,451,68,Male,White,January,Minneapolis,MN,Gunshot,Other,2.0,3.0,age 60-70,Adult,Police Department,Police Department,White
+452,452,452,452,68,Male,White,January,Lake Jackson,TX,Gunshot,No,2.0,3.0,age 60-70,Adult,Police Department,Police Department,White
+453,453,453,453,69,Male,White,January,Stanford,KY,Struck by vehicle,No,1.0,1.0,age 60-70,Adult,Police Department,Police Department,White
+454,454,454,454,71,Male,Unknown,January,England,AR,Gunshot,Firearm,1.0,1.0,age 70-80,Adult,Police Department,Police Department,Non White
+455,455,455,455,72,Male,Unknown,May,Lawrenceville,GA,Gunshot,Firearm,3.0,4.0,age 70-80,Adult,Sheriff's Office,Sheriff's Office,Non White
+456,456,456,456,72,Male,White,April,CaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ­_ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±on City,CO,Gunshot,Firearm,3.0,2.0,age 70-80,Adult,Police Department,Police Department,White
+457,457,457,457,74,Male,Black,February,Gastonia,NC,Gunshot,Firearm,1.0,1.0,age 70-80,Adult,Police Department,Police Department,Non White
+458,458,458,458,75,Male,White,January,Old Bridge Township,NJ,Gunshot,Knife,2.0,5.0,age 70-80,Adult,Police Department,Police Department,White
+459,459,459,459,76,Male,White,April,Hanford,CA,Gunshot,Knife,4.0,3.0,age 70-80,Adult,Sheriff's Office,Sheriff's Office,White
+460,460,460,460,77,Male,Black,March,Birmingham,AL,Gunshot,No,1.0,1.0,age 70-80,Adult,Police Department,Police Department,Non White
+461,461,461,461,83,Male,White,April,Newalla,OK,Gunshot,No,3.0,4.0,age 80-90,Adult,Police Department,Police Department,White
+462,462,462,462,87,Male,White,January,Catskill,NY,Struck by vehicle,Firearm,4.0,3.0,age 80-90,Adult,State Police,State Police,White
+463,463,463,463,54,Male,Hispanic/Latino,February,Houston,TX,Gunshot,No,3.0,3.0,age 50-60,Middle-Aged,US Marshals Service,US Marshals Service,Non White
+464,464,464,464,32,Male,Unknown,January,Mabank,TX,Gunshot,Other,5.0,3.0,age 30-40,Young,Police Department,Police Department,Non White
+465,465,465,465,28,Female,Unknown,May,Austin,TX,Gunshot,Knife,5.0,3.0,age 20-30,Young,Police Department,Police Department,Non White
+466,466,466,466,18,Male,White,June,Rochester,NY,Gunshot,Firearm,5.0,3.0,age 10-20,Teenager,State Police,State Police,White
