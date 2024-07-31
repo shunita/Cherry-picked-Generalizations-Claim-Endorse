@@ -1,7 +1,7 @@
 import pandas as pd
 import Naive
 import Shared
-import Optimized
+import Optimized_new as Optimized
 import Optimized_CA_new
 import Optimized_alter
 from PartitionQuery import PartitionQuery
@@ -13,11 +13,14 @@ import numpy
 from tkinter import _flatten
 import tracemalloc
 import random
-import Datacube
+# import datacube
 from sqlalchemy import create_engine
 import time
+import itertools
 
-def get_heirarchy(selected, ignore = "IGNORE"):
+START_TIME = time.time()
+
+def get_hierarchy(selected, ignore ="IGNORE"):
     ans= {}
     i = 0
     for s in selected:
@@ -43,6 +46,10 @@ def get_heirarchy(selected, ignore = "IGNORE"):
 
 
 def f_so_statment1(groups, Currentgroups):
+    """
+    @param groups: query result, like a dictionary from group to a numeric value
+    @param Currentgroups: the identifiers(a list of strings) of the groups
+    """
     for g in Currentgroups:
         if not g in groups:
             return False
@@ -54,7 +61,7 @@ def f_so_statment1(groups, Currentgroups):
 
 
 def so_statment_3(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore="Country")
+    hierarchy = get_hierarchy(selected, ignore="Country")
     mapping = {}
     for k in hierarchy.keys():
         mapping[k] = "pred"
@@ -83,7 +90,7 @@ def so_statment_3(selected, file, df, algo, count, memo = False):
 
 
 def so_statment_2(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore="UndergradMajorCS")
+    hierarchy = get_hierarchy(selected, ignore="UndergradMajorCS")
     mapping = {}
     for k in hierarchy.keys():
         mapping[k] = "pred"
@@ -111,7 +118,7 @@ def so_statment_2(selected, file, df, algo, count, memo = False):
 
 
 def so_statment_1(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore = "Gender")
+    hierarchy = get_hierarchy(selected, ignore ="Gender")
     mapping = {}
     for k in hierarchy.keys():
         mapping[k] = "pred"
@@ -141,7 +148,7 @@ def so_statment_1(selected, file, df, algo, count, memo = False):
         run_exp(G, S, algo, atts, file, hierarchy, mapping, count)
 
 def pk_statment_1(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore = "raceethnicityW")
+    hierarchy = get_hierarchy(selected, ignore ="raceethnicityW")
     mapping = {}
     for k in hierarchy.keys():
         mapping[k] = "pred"
@@ -173,7 +180,7 @@ def pk_statment_1(selected, file, df, algo, count, memo = False):
         run_exp(G, S, algo, atts, file, hierarchy, mapping, count)
 
 def usc_statment_1(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore = "SEX")
+    hierarchy = get_hierarchy(selected, ignore ="SEX")
     print("hhhhhhhhh")
     print(hierarchy)
     mapping = {}
@@ -207,7 +214,7 @@ def usc_statment_1(selected, file, df, algo, count, memo = False):
         run_exp(G, S, algo, atts, file, hierarchy, mapping, count)
 
 def usc_statment_2(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore = "CITIZEN")
+    hierarchy = get_hierarchy(selected, ignore ="CITIZEN")
     mapping = {}
     for k in hierarchy.keys():
         mapping[k] = "pred"
@@ -240,7 +247,7 @@ def usc_statment_2(selected, file, df, algo, count, memo = False):
 
 
 def usc_statment_3(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore = "IMMIGR")
+    hierarchy = get_hierarchy(selected, ignore ="IMMIGR")
     mapping = {}
     for k in hierarchy.keys():
         mapping[k] = "pred"
@@ -272,7 +279,7 @@ def usc_statment_3(selected, file, df, algo, count, memo = False):
         run_exp(G, S, algo, atts, file, hierarchy, mapping, count)
 
 def pk_statment_2(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore = "gender")
+    hierarchy = get_hierarchy(selected, ignore ="gender")
     mapping = {}
     for k in hierarchy.keys():
         mapping[k] = "pred"
@@ -304,7 +311,7 @@ def pk_statment_2(selected, file, df, algo, count, memo = False):
 
 
 def pk_statment_3(selected, file, df, algo, count, memo = False):
-    hierarchy = get_heirarchy(selected, ignore = "county_bucket")
+    hierarchy = get_hierarchy(selected, ignore ="county_bucket")
     mapping = {}
     for k in hierarchy.keys():
         mapping[k] = "pred"
@@ -340,14 +347,14 @@ def run_exp_memo(G, S, algo, atts, file, hierarchy, mapping, count):
 
     if algo == "Optimized":
         #tracemalloc.start()
-        t = Optimized.get_score_optimized(G, S, mapping, hierarchy, atts, tarck_mem = True)
+        t = Optimized.get_score_optimized(G, S, mapping, hierarchy, atts, track_mem= True)
         #current, peak = tracemalloc.get_traced_memory()
         #t = peak / 10 ** 6,
         #tracemalloc.stop()
     elif algo == "Memo":
         #tracemalloc.start()
-        t = Optimized.get_score_optimized(G, S, mapping, hierarchy, atts,space_opt = True,
-                                          tarck_mem = True)
+        t = Optimized.get_score_optimized(G, S, mapping, hierarchy, atts, space_opt = True,
+                                          track_mem= True)
         #current, peak = tracemalloc.get_traced_memory()
         #t = peak / 10 ** 6
         #tracemalloc.stop()
@@ -385,13 +392,13 @@ def run_exp(G, S, algo, atts, file, hierarchy, mapping, count):
         t = end - start
     elif algo == "No-par":
         start = time.time()
-        score = Optimized.get_score_optimized(G, S, mapping, hierarchy, atts, par=False)
+        score = Optimized.get_score_optimized(G, S, mapping, hierarchy, atts, parallelized=False)
         end = time.time()
         memo = 0
         t = end - start
     elif algo == "Counter":
         start = time.time()
-        memo, score = Optimized_CA_new.get_score_optimized(G, S, mapping, hierarchy, atts)
+        memo, score = Optimized_CA_new.get_score_optimized(G, S, mapping, hierarchy, atts, start_time=START_TIME)
         end = time.time()
         t = end - start
     elif algo == "Alter":
@@ -406,7 +413,7 @@ def run_exp(G, S, algo, atts, file, hierarchy, mapping, count):
         t = end - start
     elif algo == "Cube":
         start = time.time()
-        memo, score = Datacube.get_score_naive(G, S, mapping, hierarchy, atts, False)
+        memo, score = datacube.get_score_naive(G, S, mapping, hierarchy, atts, False)
         end = time.time()
         t = end - start
     if not algo == "":
@@ -417,7 +424,7 @@ def run_exp(G, S, algo, atts, file, hierarchy, mapping, count):
 
 def num_of_groups_so(df,file,algo, memo = False):
     selected = [['Student'],['Gender'], ['Age-Group'], ['Hobby'], ['Country'] ]
-    hierarchy = get_heirarchy(selected, ignore="Continent")
+    hierarchy = get_hierarchy(selected, ignore="Continent")
     mapping = {}
     for k in hierarchy.keys():
         if k == list(hierarchy.keys())[-1]:
@@ -453,7 +460,7 @@ def num_of_groups_pk(df,file,algo, memo = False):
     selected = [['raceethnicity'], ['armed'],
                  ['lawenforcementagency_fixed'], ['nat_bucket'], ['gender'], ['cause'],
                 ['city', 'state']]
-    hierarchy = get_heirarchy(selected, ignore="state")
+    hierarchy = get_hierarchy(selected, ignore="state")
     print(hierarchy)
     mapping = {}
     for k in hierarchy.keys():
@@ -491,7 +498,7 @@ def num_of_groups_usc(df,file,algo, memo = False):
     selected = [ ['Available for Work'], ['CITIZEN'], ['MARITAL'], ['ENGLISH'],
                  ['SEX'],
                 ['AGE', "AGE-GROUP"]]
-    hierarchy = get_heirarchy(selected, ignore="AGE-GROUP")
+    hierarchy = get_hierarchy(selected, ignore="AGE-GROUP")
     mapping = {}
     for k in hierarchy.keys():
         if k == list(hierarchy.keys())[-1]:
@@ -803,22 +810,129 @@ def usc_exp(ifile,ofile,algo):
 
     file.close()
 
+def run_algorithm(algorithm_string, selected, group_by_attr, output_path, df_path, target, aggr, g1, g2, maybe_df=None):
+    #algo="Naive"
+    memo=False
+    num_attributes=len(selected)
+    if maybe_df is None:
+        if "SO" in df_path:
+            df = read_so_with_first_value()
+        else:
+            df = pd.read_csv(df_path)
+        print(f"Read {len(df)} rows from {df_path}.")
+    else:
+        df = maybe_df
+        print("Using pre-read dataset")
+    df = df.dropna(subset=[target, group_by_attr]).copy()
+    df = df.fillna("UNKNOWN")
+    file = open(output_path, "w")
+    hierarchy = get_hierarchy(selected, ignore=group_by_attr)
+    mapping = {}
+    for k in hierarchy.keys():
+        mapping[k] = "pred"
+
+    g_level = []
+    for k in hierarchy.keys():
+        level = hierarchy[k].index("NI")
+        g_level.append(level)
+
+    # get Hesse diagram
+    G = Naive.get_hesse_diag(g_level)
+    Q = PartitionQuery([group_by_attr], {}, target, aggr)
+    # Q = PartitionQuery([group_by_attr],{"YearsCode": "0.0-10.0"}, target, aggr)
+    # More options: , {"PlatformWantToWorkWith":"AWS"},{"OrgSize" :"10,000 or more employees"}
+
+    S = Statement(Q, f_so_statment1, df, {"g1": g1, "g2": g2})
+    #TODO: Correct String below
+    S.string = "This String needs to be corrected"
+    # get a set of partition attributes (ly), do we need to ignore the gender?
+    atts = selected
+    atts = list(_flatten(atts))
+    atts = list(set(atts).union(set(Q.cond)))
+    atts = list(set(atts).union(set(Q.att)))
+
+    if memo:
+        run_exp_memo(G, S, algorithm_string, atts, file, hierarchy, mapping, num_attributes)
+    else:
+        run_exp(G, S, algorithm_string, atts, file, hierarchy, mapping, num_attributes)
+    return df
 
 def main(args):
-
     # input file (so.csv, police_killings.csv)
     ifile = args[1]
     # output file (e.g., SO_scalability_queries_naive.txt)
     ofile = args[2]
     #the algorithm to run: (Naive, Shared, Memo, Optimized, No-par)
     algo = args[3]
-    so_exp(ifile,ofile,algo)
+    # TODO: for counter examples, add here some more attributes
+    #selected = [["Age"], ["LearnCode"]]  # ["DevType"],["ICorPM"],["Country"], ["EdLevel"], ["Employment"],["MainBranch"],["Country"]
+    #selected = [['POBP'], ['SCIENGP'], ['MLPH'], ['HISP']] #, ['SCIENGRLP'], ['DDRS'], ['HINS2'], ['OCCP'], ['INDP'], ['MARHT']]
+    #selected = [['SEX'], ['GCM'], ['ANC'], ['RAC1P'], ['NATIVITY'], ['MARHD'], ['YOEP'], ['PUBCOV'], ['INDP'], ['WAOB'], ['HINS7'], ['OCCP'], ['AGEP'], ['FHINS5C'], ['ESP'], ['LANP'], ['MARHW'], ['RAC3P'], ['DPHY'], ['DRAT'], ['MIG'], ['POWPUMA'], ['ANC2P'], ['DIVISION'], ['MLPCD'], ['PAOC'], ['SCH'], ['NAICSP_grouped'], ['LANX'], ['FOD1P'], ['RACAIAN'], ['DOUT'], ['JWMNP'], ['RACBLK'], ['RACSOR'], ['NWAV'], ['GCL'], ['MIGPUMA'], ['SFN'], ['FER']]
+    selected = [['DEPARTURE_TIME'], ['SCHEDULED_DEPARTURE'], ['WHEELS_OFF']]
+
+    #grp = "Gender"
+    #grp = "EdLevel"
+    #grp = "SEX"
+    grp = "DAY_OF_WEEK"
+    #target = "ConvertedCompYearly"
+    #target = "PINCP"
+    target = "DEPARTURE_DELAY"
+    #aggr = "mean"
+    aggr = "count"
+    #aggr = "median"
+    #g1 = "Man"
+    #g2 = "Woman"
+    #g1 = "Bachelor’s degree"
+    #g2 = "Master’s degree"
+    #g1 = 1
+    #g2 = 2
+    g1 = 1
+    g2 = 6
+    pairs = list(itertools.combinations(selected, 2))
+    df = None
+    for i, pair in enumerate(pairs):
+        print(f"Working on {pair} ({i}/{len(pairs)})")
+        pass_target = target
+        if aggr == "count":
+            pass_target = None
+        df = run_algorithm(algorithm_string=algo, selected=pair, group_by_attr=grp, output_path=ofile, df_path=ifile,
+                      target=target, aggr=aggr, g1=g1, g2=g2, maybe_df=df)
+    #so_exp(ifile,ofile,algo)
     #pk_exp(ifile,ofile,algo)
     #usc_exp(ifile,ofile,algo)
 
 
+def is_multivalue_attr(df, attr, split_str=";"):
+    """
+    :param df: the dataframe
+    :param attr: the attribute we are checking
+    :param split_str: the string we are delineating our values with
+    :return: True if the attribute is a multivalue field, because it has values with the split_str between them
+    """
+    values = df[attr].unique()
+    for v in values:
+        if split_str in str(v):
+            return True
+    return False
+
+
+def safe_split(s):
+    if type(s) != str:
+        return s
+    return s.split(';')[0]
+
+
+def read_so_with_first_value():
+    df = pd.read_csv("datasets/SO_DBversion.csv", index_col=0)
+    for col in df.columns:
+        if is_multivalue_attr(df, col):
+            df[col] = df[col].apply(safe_split)
+    return df
+
 
 if __name__ == '__main__':
-    args = sys.argv
+    #args = sys.argv
+    #main(["","datasets/SO_DBversion.csv", "results/SO_DBversion_output.txt", "Counter"])
+    #main(["","datasets/Seven_States_grouped_discretized.csv", "results/ACS_output.txt", "Counter"])
+    main(["","datasets/flights_with_airports_discretized_filtered.csv", "results/flights_output.txt", "Counter"])
 
-    main(args)

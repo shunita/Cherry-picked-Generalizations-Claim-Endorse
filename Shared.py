@@ -55,7 +55,7 @@ def get_score_shared(G, S, mapping,heirerchy):
                     return 0
             dic_v = Optimized.updateMemoTable(S, df, heirerchy, mapping, v)
             A = Naive.get_grouping_att(v, mapping, heirerchy)
-            R = Naive.get_refinetment_expressions(v, mapping, heirerchy, S.df)
+            R = Naive.get_refinement_expressions(v, mapping, heirerchy, S.df)
             Rs = np.array_split(R, 1)
             cc = 0
             threads = []

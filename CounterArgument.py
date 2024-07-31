@@ -1,9 +1,11 @@
 import pandas as pd
 import numpy as np
+import time
+import os
 
 class CounterArgument:
 
-    def __init__(self, attributes, df):
+    def __init__(self, attributes, df, output_path=None, start_time=None, grp_attr=None):
         # initialized the counter argument columns
         # format of column names: 'attribute:value'
         self.attributes = attributes
@@ -15,6 +17,16 @@ class CounterArgument:
                 cols.append(str(att) + ':' + str(v))
         cols.append('in_result')
         self.inverted_index = pd.DataFrame(columns = cols, dtype = bool)
+        self.output_path = output_path
+        if self.output_path is not None:
+            if not os.path.exists(self.output_path):
+                with open(self.output_path, "w") as out:
+                    out.write("Counter argument,Time\n")
+        self.start_time = start_time
+        self.grp_attr = grp_attr
+        if self.grp_attr is None:
+            self.grp_attr = "BLABLABLA"
+        
 
     def RemoveChildrenSingle(self, ca, g1_index, g2_index):
         self.inverted_index['temp'] = True
@@ -54,6 +66,10 @@ class CounterArgument:
             for col in ca:
                 insert[col] = True
             insert['in_result'] = True
+            # also output to a file with predicates
+            with open(self.output_path, "a") as out:
+                ca_preds_only = sorted([x for x in ca if not x.startswith(self.grp_attr)], key=lambda kv: kv.split(":")[0])
+                out.write(f'"{ca_preds_only}",{time.time()-self.start_time}\n')
             self.inverted_index = self.inverted_index.append(insert, ignore_index = True)
 
     def ShowResult(self):

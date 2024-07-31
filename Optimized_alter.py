@@ -256,7 +256,7 @@ def get_score_optimized(G, S, mapping,heirerchy, atts,
             changed_att, prev_att = getChangedAtt(vc, heirerchy, vv)
             table[str(vv)] = updateMemoTableFromChild(str(prev_att), dic_c)
         A = Naive.get_grouping_att(v, mapping, heirerchy)
-        R = Naive.get_refinetment_expressions(v, mapping, heirerchy, S.df)
+        R = Naive.get_refinement_expressions(v, mapping, heirerchy, S.df)
         if layer == 0:
             ComputeScore(R, S.Q, Q_count, table[str(vv)], A, S, None, alternative, threadshold, table, str(vv), missed, node_num)
         else:

@@ -14,7 +14,8 @@ class PartitionQuery:
             groups =  df.groupby(self.att)
             #groups = df.groupby(["raceethnicity"])
             return groups.size()
-        groups =  df.groupby(self.att)[self.target].mean()#.agg([self.agg])
+        #groups =  df.groupby(self.att)[self.target].mean()#.agg([self.agg])
+        groups =  df.groupby(self.att)[self.target].agg(self.agg)
         return groups
 
     def __repr__(self):

@@ -9,7 +9,7 @@ class Statement:
     def __repr__(self):
         agg = self.Q.agg
         return "The "+agg +" "+str(self.Q.target) +" of "+str(self.groups["g1"]) +\
-               " where: "+ str(self.Q.cond)+ " is grater than that of " +str(self.groups["g2"])
+               " where: "+ str(self.Q.cond)+ " is greater than that of " +str(self.groups["g2"])
 
     def check(self):
         listofgroups = []

@@ -15,24 +15,7 @@ from multiprocessing.managers import BaseManager
 
 
 # single-process
-# def ComputeScore(R, Q, Q_count, dic, A, S, scores, inverted_index):
-#     score = 0
-#     for r in R:
-#         att = [a for a in Q.att]
-#         for a in A:
-#             if not a in att:
-#                 att.append(a)
-#         cond = {**Q.cond, **r}
-#         weight = get_weight(Q_count, cond, dic)
-#         support = 0
-#         if weight > 0:
-#             QQ = PartitionQuery(att, cond, Q.target)
-#             support = get_support(QQ, dic, S.groups, inverted_index)
-#         score += weight * support
-#     scores.append(score)
-
-# multi-process
-def ComputeScore(R, Q, Q_count, dic, A, S, scores):
+def ComputeScore(R, Q, Q_count, dic, A, S, scores, inverted_index):
     score = 0
     for r in R:
         att = [a for a in Q.att]
@@ -44,12 +27,29 @@ def ComputeScore(R, Q, Q_count, dic, A, S, scores):
         support = 0
         if weight > 0:
             QQ = PartitionQuery(att, cond, Q.target)
-            support = get_support(QQ, dic, S.groups,[])
-            # if support > 0:
-            #     print(QQ, weight, support)
+            support = get_support(QQ, dic, S.groups, inverted_index)
         score += weight * support
-        #print(dic.head())
     scores.append(score)
+
+# multi-process
+# def ComputeScore(R, Q, Q_count, dic, A, S, scores):
+#     score = 0
+#     for r in R:
+#         att = [a for a in Q.att]
+#         for a in A:
+#             if not a in att:
+#                 att.append(a)
+#         cond = {**Q.cond, **r}
+#         weight = get_weight(Q_count, cond, dic)
+#         support = 0
+#         if weight > 0:
+#             QQ = PartitionQuery(att, cond, Q.target)
+#             support = get_support(QQ, dic, S.groups,[])
+#             # if support > 0:
+#             #     print(QQ, weight, support)
+#         score += weight * support
+#         #print(dic.head())
+#     scores.append(score)
 
 
 # to compute the counts given the condition
@@ -111,6 +111,7 @@ def MergeStatement(sorted_groups, target, inverted_index):
         for_compare.sort_values(by=["count"], ascending=True, inplace=True)
     else:
         for_compare.sort_values(by=["avg"], ascending=True, inplace=True)
+    #print(f"MergeStatement: for_compare:\n{for_compare}")
     correct = 0
     CA_list = []
     for_att_names = for_compare.reset_index()
@@ -123,7 +124,7 @@ def MergeStatement(sorted_groups, target, inverted_index):
                 passed[1] += 1
                 if(len(CA_list)!=0):
                     #have not been updated for the 
-                    #inverted_index.Add(att_names, index, CA_list)
+                    inverted_index.Add(att_names, index, CA_list)
                     CA_list = []
             #CA_list.append(index)
         if (row["group_identifier"] == 'g3'):
@@ -149,6 +150,7 @@ def MergeStatement(sorted_groups, target, inverted_index):
         if (row["group_identifier"] == 'g1'):
             correct += np.prod(passed[1:])
             CA_list.append(index)
+    #print(f"CA_list: {CA_list}")
     return correct
 
 
@@ -176,19 +178,22 @@ def get_support(QQ, table, groups, inverted_index):
 
 
 def get_score_optimized(G, S, mapping, heirerchy, atts,
-                        par=True, space_opt=False, tarck_mem = False,verbose=False):
+                        par=True, space_opt=False, tarck_mem = False,verbose=False, start_time=None):
     score = 0
-    #start1 = time.time()
+    start1 = start_time if start_time is not None else time.time()
     #tab
     table = {}
     L = Naive.get_nodes_buttom_up(G)
+    print(L)
     node_num = len(L)
     print("The number of the nodes is")
     print(node_num)
     # add counter argument initialization
     # m2 = Manager2()
+    print(f"attributes: {atts}")
     print(atts)
-    inverted_index  = CounterArgument(atts, S.df)
+    output_path = 'results/found_cas_flights_sat_gt_mon_attr_pairs_test.csv'
+    inverted_index = CounterArgument(atts, S.df, output_path, start1, S.Q.att[0])
     #end1 = time.time()
     #time1 = end1 - start1
     #print("The time before GM traveral is")
@@ -196,7 +201,7 @@ def get_score_optimized(G, S, mapping, heirerchy, atts,
     # This is to measure the time for computeScore
     time2 = 0
     for v in L:
-        print(v)
+        #print(f"v: {v}")
         # if(v == L[-1]):
         #    continue
         v = v[0]
@@ -208,49 +213,56 @@ def get_score_optimized(G, S, mapping, heirerchy, atts,
             else:
                 return 0
         vv = Naive.node2list(v)
+        #print(f"vv: {vv}")
         if all(val == 0 for val in vv):
             start = time.time()
+            # this will hold a table of all groups and agg values (cube?).
             dic_v = updateMemoTable(S.df, S, atts)
+            
+            #print(f"dic_v: {dic_v}")
             end1 = time.time()
             # first to compute the weight for the original statment
             Q_count = GetFromGMByAttribute(S.Q.cond, dic_v)
+            #print(f"Q_count: {Q_count}")
             table[str(vv)] = dic_v
         else:
             vc = getChildnode(vv)
+            #print(f"vc: {vc}")
             dic_c = table[str(vc)]
             changed_att, prev_att = getChangedAtt(vc, heirerchy, vv)
             table[str(vv)] = updateMemoTableFromChild(str(prev_att), dic_c)
         A = Naive.get_grouping_att(v, mapping, heirerchy)
-        R = Naive.get_refinetment_expressions(v, mapping, heirerchy, S.df)
+        R = Naive.get_refinement_expressions(v, mapping, heirerchy, S.df)
 
         ### for parallel
-        if par:
-            cpu_number = 1#cpu_count()
-        else:
-            cpu_number = 1
-        Rs = np.array_split(R, cpu_number)
-        manager = Manager()
-        scores = manager.list()
-        pool = Pool(processes=cpu_number)
-        for Ri in Rs:
-            pool.apply_async(ComputeScore, (Ri, S.Q, Q_count, table[str(vv)], A, S, scores))
-        pool.close()
-        pool.join()
-        score = score + sum(scores)
-        ## for non-parallel
-        # scores = []
-        # start_t = time.time()
-        # ComputeScore(R, S.Q, Q_count, table[str(vv)], A, S, scores, inverted_index)
-        # end_t = time.time()
-        # time2 += end_t - start_t
-        # print("The time for Compute Score is")
-        # print(time2)
+        # if par:
+        #     cpu_number = 1#cpu_count()
+        # else:
+        #     cpu_number = 1
+        # Rs = np.array_split(R, cpu_number)
+        # manager = Manager()
+        # scores = manager.list()
+        # pool = Pool(processes=cpu_number)
+        # for Ri in Rs:
+        #     pool.apply_async(ComputeScore, (Ri, S.Q, Q_count, table[str(vv)], A, S, scores))
+        # pool.close()
+        # pool.join()
         # score = score + sum(scores)
-        # end = time.time()
-    # print("The currrent set of inverted index is")
+        ## for non-parallel
+        scores = []
+        start_t = time.time()
+        # in here it should update the inverted_index
+        ComputeScore(R, S.Q, Q_count, table[str(vv)], A, S, scores, inverted_index)
+        end_t = time.time()
+        time2 += end_t - start_t
+        print("The time for Compute Score is")
+        print(time2)
+        score = score + sum(scores)
+        end = time.time()
     #inverted_index.ShowResult()
-    #memo = inverted_index.ShowResult()
-    memo = 0
+    memo = inverted_index.ShowResult()
+    inverted_index.inverted_index.to_csv("results/inv_index.csv")
+    #memo = 0
     score = score/(node_num-1)
     print("The score is:")
     print(score)

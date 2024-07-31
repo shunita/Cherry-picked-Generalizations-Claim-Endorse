@@ -28,6 +28,7 @@ def ComputeScore(R, Q, Q_count, dic, A, S, scores):
             #     print(QQ, weight, support)
         score += weight * support
         #print(dic.head())
+    #TODO: The score is not normalized!!!!!
     scores.append(score)
 
 
@@ -123,8 +124,8 @@ def get_support(QQ, table, groups):
     return supp
 
 
-def get_score_optimized(G, S, mapping, heirerchy, atts,
-                        par=True, space_opt=False, tarck_mem = False,verbose=False):
+def get_score_optimized(G, S, mapping, hierarchy, atts,
+                        parallelized=True, space_opt=False, track_mem = False, verbose=False):
     mem = 0
     score = 0
     table = {}
@@ -168,12 +169,12 @@ def get_score_optimized(G, S, mapping, heirerchy, atts,
         else:
             vc = getChildnode(vv)
             dic_c = table[str(vc)]
-            changed_att, prev_att = getChangedAtt(vc, heirerchy, vv)
+            changed_att, prev_att = getChangedAtt(vc, hierarchy, vv)
             table[str(vv)] = updateMemoTableFromChild(str(prev_att), dic_c,S.Q.target)
-        A = Naive.get_grouping_att(v, mapping, heirerchy)
-        R = Naive.get_refinetment_expressions(v, mapping, heirerchy, S.df)
+        A = Naive.get_grouping_att(v, mapping, hierarchy)
+        R = Naive.get_refinement_expressions(v, mapping, hierarchy, S.df)
         # use the number of cores as the number of processes
-        if par:
+        if parallelized:
             cpu_number = 8#cpu_count()
         else:
             cpu_number = 1
@@ -186,9 +187,9 @@ def get_score_optimized(G, S, mapping, heirerchy, atts,
         pool.close()
         pool.join()
         score = score + sum(scores)
-        if tarck_mem:
+        if track_mem:
             mem = max(mem, total_size(table))
-    if tarck_mem:
+    if track_mem:
         return mem
     end = time.time()
     print("finished!! Time:")
